@@ -1,0 +1,42 @@
+{
+  "originHash" : "2f1b389ace2a3f675402b5b784c9792ac5ffa6f491841c5bc823f9bb0b46bac4",
+  "pins" : [
+    {
+      "identity" : "dswaveformimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dmrschmidt/DSWaveformImage.git",
+      "state" : {
+        "revision" : "6074c2334a5a34afaa8394df853c8ceb026ad137",
+        "version" : "14.1.1"
+      }
+    },
+    {
+      "identity" : "feedkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nmdias/FeedKit.git",
+      "state" : {
+        "revision" : "68493a33d862c33c9a9f67ec729b3b7df1b20ade",
+        "version" : "9.1.2"
+      }
+    },
+    {
+      "identity" : "onesignal-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OneSignal/OneSignal-XCFramework",
+      "state" : {
+        "revision" : "72e4fa4c3d83f6c1f7b35955e0793754ea2dd15d",
+        "version" : "5.2.4"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
+      "state" : {
+        "revision" : "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+        "version" : "5.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

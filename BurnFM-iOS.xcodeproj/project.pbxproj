@@ -3,17 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0229FFEA2AEDD7AB003BFD5D /* Podcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229FFE92AEDD7AB003BFD5D /* Podcasts.swift */; };
+		0243080B2AE6F6560081C601 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243080A2AE6F6560081C601 /* Schedule.swift */; };
+		02460F202CA05FB300A15E55 /* OnDemand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02460F1F2CA05FB300A15E55 /* OnDemand.swift */; };
+		02460F222CA0619B00A15E55 /* HelpperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02460F212CA0618F00A15E55 /* HelpperFunctions.swift */; };
+		0281F0532C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0281F04C2C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0281F05D2C83792500C71ABF /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0281F05C2C83792500C71ABF /* OneSignalFramework */; };
+		0281F05F2C83793E00C71ABF /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0281F05E2C83793E00C71ABF /* OneSignalFramework */; };
+		0281F0612C837F1100C71ABF /* Committee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281F0602C837F1100C71ABF /* Committee.swift */; };
+		02DD3C9C2AE1467D003879E4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 02DD3C9B2AE1467D003879E4 /* SwiftyJSON */; };
 		02FC9E972AE12D5B005CFC04 /* BurnFM_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC9E962AE12D5B005CFC04 /* BurnFM_iOSApp.swift */; };
 		02FC9E992AE12D5B005CFC04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC9E982AE12D5B005CFC04 /* ContentView.swift */; };
 		02FC9E9B2AE12D5C005CFC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FC9E9A2AE12D5C005CFC04 /* Assets.xcassets */; };
 		02FC9E9E2AE12D5C005CFC04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FC9E9D2AE12D5C005CFC04 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0281F0512C8377BB00C71ABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02FC9E8B2AE12D5B005CFC04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0281F04B2C8377BB00C71ABF;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0281F0542C8377BB00C71ABF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0281F0532C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0229FFE92AEDD7AB003BFD5D /* Podcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcasts.swift; sourceTree = "<group>"; };
+		0243080A2AE6F6560081C601 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		02460F1F2CA05FB300A15E55 /* OnDemand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDemand.swift; sourceTree = "<group>"; };
+		02460F212CA0618F00A15E55 /* HelpperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpperFunctions.swift; sourceTree = "<group>"; };
+		0281F04C2C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0281F0602C837F1100C71ABF /* Committee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Committee.swift; sourceTree = "<group>"; };
+		0289E8D32C7A8EB8009F9E72 /* BurnFM-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BurnFM-iOS.entitlements"; sourceTree = "<group>"; };
+		02A5AFA42AE57AF70038214B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02FC9E932AE12D5B005CFC04 /* BurnFM-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BurnFM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FC9E962AE12D5B005CFC04 /* BurnFM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnFM_iOSApp.swift; sourceTree = "<group>"; };
 		02FC9E982AE12D5B005CFC04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,21 +62,54 @@
 		02FC9E9D2AE12D5C005CFC04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0281F0572C8377BB00C71ABF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0281F04B2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0281F04D2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0281F0572C8377BB00C71ABF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = OneSignalNotificationServiceExtension; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		0281F0492C8377BB00C71ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0281F05F2C83793E00C71ABF /* OneSignalFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02FC9E902AE12D5B005CFC04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0281F05D2C83792500C71ABF /* OneSignalFramework in Frameworks */,
+				02DD3C9C2AE1467D003879E4 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0281F05B2C83792500C71ABF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		02FC9E8A2AE12D5B005CFC04 = {
 			isa = PBXGroup;
 			children = (
 				02FC9E952AE12D5B005CFC04 /* BurnFM-iOS */,
+				0281F04D2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */,
+				0281F05B2C83792500C71ABF /* Frameworks */,
 				02FC9E942AE12D5B005CFC04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				02FC9E932AE12D5B005CFC04 /* BurnFM-iOS.app */,
+				0281F04C2C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +126,15 @@
 		02FC9E952AE12D5B005CFC04 /* BurnFM-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0289E8D32C7A8EB8009F9E72 /* BurnFM-iOS.entitlements */,
+				02A5AFA42AE57AF70038214B /* Info.plist */,
+				0229FFE92AEDD7AB003BFD5D /* Podcasts.swift */,
 				02FC9E962AE12D5B005CFC04 /* BurnFM_iOSApp.swift */,
 				02FC9E982AE12D5B005CFC04 /* ContentView.swift */,
+				0243080A2AE6F6560081C601 /* Schedule.swift */,
+				02460F212CA0618F00A15E55 /* HelpperFunctions.swift */,
+				0281F0602C837F1100C71ABF /* Committee.swift */,
+				02460F1F2CA05FB300A15E55 /* OnDemand.swift */,
 				02FC9E9A2AE12D5C005CFC04 /* Assets.xcassets */,
 				02FC9E9C2AE12D5C005CFC04 /* Preview Content */,
 			);
@@ -70,6 +152,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0281F04B2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0281F0582C8377BB00C71ABF /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				0281F0482C8377BB00C71ABF /* Sources */,
+				0281F0492C8377BB00C71ABF /* Frameworks */,
+				0281F04A2C8377BB00C71ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0281F04D2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				0281F05E2C83793E00C71ABF /* OneSignalFramework */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 0281F04C2C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		02FC9E922AE12D5B005CFC04 /* BurnFM-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02FC9EA12AE12D5C005CFC04 /* Build configuration list for PBXNativeTarget "BurnFM-iOS" */;
@@ -77,12 +182,18 @@
 				02FC9E8F2AE12D5B005CFC04 /* Sources */,
 				02FC9E902AE12D5B005CFC04 /* Frameworks */,
 				02FC9E912AE12D5B005CFC04 /* Resources */,
+				0281F0542C8377BB00C71ABF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0281F0522C8377BB00C71ABF /* PBXTargetDependency */,
 			);
 			name = "BurnFM-iOS";
+			packageProductDependencies = (
+				02DD3C9B2AE1467D003879E4 /* SwiftyJSON */,
+				0281F05C2C83792500C71ABF /* OneSignalFramework */,
+			);
 			productName = "BurnFM-iOS";
 			productReference = 02FC9E932AE12D5B005CFC04 /* BurnFM-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -94,9 +205,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					0281F04B2C8377BB00C71ABF = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					02FC9E922AE12D5B005CFC04 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -111,16 +225,30 @@
 				Base,
 			);
 			mainGroup = 02FC9E8A2AE12D5B005CFC04;
+			packageReferences = (
+				02DD3C9A2AE1467D003879E4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				024308052AE6F4360081C601 /* XCRemoteSwiftPackageReference "DSWaveformImage" */,
+				0281F05A2C83788900C71ABF /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				02460F232CA06BAC00A15E55 /* XCRemoteSwiftPackageReference "FeedKit" */,
+			);
 			productRefGroup = 02FC9E942AE12D5B005CFC04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				02FC9E922AE12D5B005CFC04 /* BurnFM-iOS */,
+				0281F04B2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0281F04A2C8377BB00C71ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02FC9E912AE12D5B005CFC04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +261,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0281F0482C8377BB00C71ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02FC9E8F2AE12D5B005CFC04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0243080B2AE6F6560081C601 /* Schedule.swift in Sources */,
+				0281F0612C837F1100C71ABF /* Committee.swift in Sources */,
+				02460F222CA0619B00A15E55 /* HelpperFunctions.swift in Sources */,
+				02460F202CA05FB300A15E55 /* OnDemand.swift in Sources */,
 				02FC9E992AE12D5B005CFC04 /* ContentView.swift in Sources */,
+				0229FFEA2AEDD7AB003BFD5D /* Podcasts.swift in Sources */,
 				02FC9E972AE12D5B005CFC04 /* BurnFM_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0281F0522C8377BB00C71ABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0281F04B2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */;
+			targetProxy = 0281F0512C8377BB00C71ABF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0281F0552C8377BB00C71ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HT3UY6CTF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "BradleyCable.BurnFM-iOS.NEW.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0281F0562C8377BB00C71ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HT3UY6CTF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "BradleyCable.BurnFM-iOS.NEW.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		02FC9E9F2AE12D5C005CFC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,27 +471,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BurnFM-iOS/BurnFM-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"BurnFM-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = HT3UY6CTF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BurnFM-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BurnFM;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BradleyCable.BurnFM-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "BradleyCable.BurnFM-iOS.NEW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,33 +508,50 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BurnFM-iOS/BurnFM-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"BurnFM-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = HT3UY6CTF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BurnFM-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BurnFM;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BradleyCable.BurnFM-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "BradleyCable.BurnFM-iOS.NEW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0281F0582C8377BB00C71ABF /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0281F0552C8377BB00C71ABF /* Debug */,
+				0281F0562C8377BB00C71ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		02FC9E8E2AE12D5B005CFC04 /* Build configuration list for PBXProject "BurnFM-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -344,6 +571,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		024308052AE6F4360081C601 /* XCRemoteSwiftPackageReference "DSWaveformImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmrschmidt/DSWaveformImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.1;
+			};
+		};
+		02460F232CA06BAC00A15E55 /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+		0281F05A2C83788900C71ABF /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.4;
+			};
+		};
+		02DD3C9A2AE1467D003879E4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0281F05C2C83792500C71ABF /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0281F05A2C83788900C71ABF /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		0281F05E2C83793E00C71ABF /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0281F05A2C83788900C71ABF /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		02DD3C9B2AE1467D003879E4 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02DD3C9A2AE1467D003879E4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02FC9E8B2AE12D5B005CFC04 /* Project object */;
 }
