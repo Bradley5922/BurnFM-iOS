@@ -47,7 +47,7 @@ struct Committee: View {
         NavigationView {
             VStack(alignment: .leading) {
                 
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 0) {
                         ForEach(0..<committeeYears.count, id: \.self) { index in
                             
@@ -133,6 +133,9 @@ struct Committee: View {
                                 view.opacity(transition.isIdentity ? 1 : 0.3)
                             }
                         }
+                        Spacer()
+                        
+                        Spacer()
                     }
                     
                 }

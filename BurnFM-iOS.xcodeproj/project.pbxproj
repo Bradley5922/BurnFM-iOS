@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0229FFEA2AEDD7AB003BFD5D /* Podcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229FFE92AEDD7AB003BFD5D /* Podcasts.swift */; };
-		0243080B2AE6F6560081C601 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243080A2AE6F6560081C601 /* Schedule.swift */; };
 		02460F202CA05FB300A15E55 /* OnDemand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02460F1F2CA05FB300A15E55 /* OnDemand.swift */; };
 		02460F222CA0619B00A15E55 /* HelpperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02460F212CA0618F00A15E55 /* HelpperFunctions.swift */; };
 		0281F0532C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0281F04C2C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0281F05D2C83792500C71ABF /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0281F05C2C83792500C71ABF /* OneSignalFramework */; };
 		0281F05F2C83793E00C71ABF /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0281F05E2C83793E00C71ABF /* OneSignalFramework */; };
 		0281F0612C837F1100C71ABF /* Committee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281F0602C837F1100C71ABF /* Committee.swift */; };
-		029161622CA36A5B0064A5FB /* schedule_new.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029161612CA36A5B0064A5FB /* schedule_new.swift */; };
-		029161632CA36A5B0064A5FB /* schedule_new.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029161612CA36A5B0064A5FB /* schedule_new.swift */; };
+		02AB14932CC448DE006EA3D8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB14922CC448DE006EA3D8 /* Schedule.swift */; };
 		02DD3C9C2AE1467D003879E4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 02DD3C9B2AE1467D003879E4 /* SwiftyJSON */; };
 		02FC9E972AE12D5B005CFC04 /* BurnFM_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC9E962AE12D5B005CFC04 /* BurnFM_iOSApp.swift */; };
 		02FC9E992AE12D5B005CFC04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC9E982AE12D5B005CFC04 /* ContentView.swift */; };
@@ -50,14 +48,13 @@
 
 /* Begin PBXFileReference section */
 		0229FFE92AEDD7AB003BFD5D /* Podcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcasts.swift; sourceTree = "<group>"; };
-		0243080A2AE6F6560081C601 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		02460F1F2CA05FB300A15E55 /* OnDemand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDemand.swift; sourceTree = "<group>"; };
 		02460F212CA0618F00A15E55 /* HelpperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpperFunctions.swift; sourceTree = "<group>"; };
 		0281F04C2C8377BB00C71ABF /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0281F0602C837F1100C71ABF /* Committee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Committee.swift; sourceTree = "<group>"; };
 		0289E8D32C7A8EB8009F9E72 /* BurnFM-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BurnFM-iOS.entitlements"; sourceTree = "<group>"; };
-		029161612CA36A5B0064A5FB /* schedule_new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schedule_new.swift; sourceTree = "<group>"; };
 		02A5AFA42AE57AF70038214B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		02AB14922CC448DE006EA3D8 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		02FC9E932AE12D5B005CFC04 /* BurnFM-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BurnFM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FC9E962AE12D5B005CFC04 /* BurnFM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnFM_iOSApp.swift; sourceTree = "<group>"; };
 		02FC9E982AE12D5B005CFC04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,7 +107,6 @@
 		02FC9E8A2AE12D5B005CFC04 = {
 			isa = PBXGroup;
 			children = (
-				029161612CA36A5B0064A5FB /* schedule_new.swift */,
 				02FC9E952AE12D5B005CFC04 /* BurnFM-iOS */,
 				0281F04D2C8377BB00C71ABF /* OneSignalNotificationServiceExtension */,
 				0281F05B2C83792500C71ABF /* Frameworks */,
@@ -135,7 +131,7 @@
 				0229FFE92AEDD7AB003BFD5D /* Podcasts.swift */,
 				02FC9E962AE12D5B005CFC04 /* BurnFM_iOSApp.swift */,
 				02FC9E982AE12D5B005CFC04 /* ContentView.swift */,
-				0243080A2AE6F6560081C601 /* Schedule.swift */,
+				02AB14922CC448DE006EA3D8 /* Schedule.swift */,
 				02460F212CA0618F00A15E55 /* HelpperFunctions.swift */,
 				0281F0602C837F1100C71ABF /* Committee.swift */,
 				02460F1F2CA05FB300A15E55 /* OnDemand.swift */,
@@ -268,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029161622CA36A5B0064A5FB /* schedule_new.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0243080B2AE6F6560081C601 /* Schedule.swift in Sources */,
 				0281F0612C837F1100C71ABF /* Committee.swift in Sources */,
 				02460F222CA0619B00A15E55 /* HelpperFunctions.swift in Sources */,
-				029161632CA36A5B0064A5FB /* schedule_new.swift in Sources */,
+				02AB14932CC448DE006EA3D8 /* Schedule.swift in Sources */,
 				02460F202CA05FB300A15E55 /* OnDemand.swift in Sources */,
 				02FC9E992AE12D5B005CFC04 /* ContentView.swift in Sources */,
 				0229FFEA2AEDD7AB003BFD5D /* Podcasts.swift in Sources */,

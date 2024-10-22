@@ -133,10 +133,7 @@ struct ContentView: View {
                     .tabItem {
                         Label("Podcasts", systemImage: "music.mic")
                     }
-                Text("Coming Soon")
-                    .font(.largeTitle)
-                    .italic()
-                    .bold()
+                Schedule()
                     .preferredColorScheme(.dark)
                     .tabItem {
                         Label("Schedule", systemImage: "calendar.badge.clock")
@@ -157,6 +154,7 @@ struct ContentView: View {
 
 struct mainScreen: View {
     
+    @State private var timer: Timer?
     @State private var show: Show? = Show(json: nil)
     
     var body: some View {
@@ -168,55 +166,64 @@ struct mainScreen: View {
                         Gradient.Stop(color: BURN_FM_BACKGROUND, location: 0.1),
                         Gradient.Stop(color: Color.init(.sRGB, white: 0.12, opacity: 1), location: 0.225)
                     ])
-                    )
+                )
                 .ignoresSafeArea(.all)
             
-            VStack {
-                if show != nil {
-                    VStack(alignment: .center) {
-                        HStack(spacing: 25) {
-                            Image("LogoBurnFMWhite")
-                                .resizable()
-                                .frame(width: 70, height: 70)
-                            VStack(alignment: .leading) {
-                                Text("Burn FM Student Radio")
-                                    .font(.title2)
-                                    .bold()
-                                Text("University of Birmingham")
-                                    .font(.title3)
-                                    .fontWeight(.light)
-                            }
-                        }
-                        
-                        Spacer()
-                        
-                        ShowMetadata(show: $show)
-                        
-                        PlayerAndButton()
-                        
-                        Spacer()
-                        Spacer()
+            VStack(alignment: .center) {
+                HStack(spacing: 25) {
+                    Image("LogoBurnFMWhite")
+                        .resizable()
+                        .frame(width: 70, height: 70)
+                    VStack(alignment: .leading) {
+                        Text("Burn FM Student Radio")
+                            .font(.title2)
+                            .bold()
+                        Text("University of Birmingham")
+                            .font(.title3)
+                            .fontWeight(.light)
                     }
-                } else {
-                    VStack(alignment: .center) {
-                        Spacer()
-                        Text("We're off air now :(")
-                            .font(.largeTitle)
-                            .fontWeight(.semibold)
-                            .foregroundStyle(BURN_FM_TINT)
-                            .italic()
-                            .padding()
-                        Text("See the schedule to know when we're broadcasting next and who's on the airwaves!\n\nMaybe in the meantime check out our podcasts, for easy anytime listening...")
-                            .opacity(0.20)
-                        Spacer()
-                    }
-                    .padding()
-                    .multilineTextAlignment(.center)
                 }
+                
+                Spacer()
+                
+                ShowMetadata(show: $show)
+                    .animation(.default, value: show)
+                
+                PlayerAndButton()
+                
+                Spacer()
+                Spacer()
             }
             .padding([.leading, .trailing], 16)
+            .onAppear {
+                startUpdateTimer()
+            }
         }
     }
+    
+    func startUpdateTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
+            // Run the code every 10 seconds
+            fetchShowData()
+        }
+    }
+        
+    func fetchShowData() {
+        getJSONfromURL(URL_string: "https://api.burnfm.com/get_schedule?now_playing=true") { result in
+            switch result {
+            case .success(let json):
+                // Delay the state update by 1 second
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    withAnimation {
+                        show = Show(json: json["now_playing"].arrayValue.first)
+                    }
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
 }
 
 struct ShowMetadata: View {
@@ -288,62 +295,7 @@ struct PlayerAndButton: View {
     }
 }
 
-struct Show: Identifiable, Equatable  {
-    var id: Int
-    var startTime: String
-    var endTime: String
-    var imagePath: String?
-    var title: String
-    var description: String
 
-    var image: some View {
-        Group {
-            if let validImagePath = imagePath {
-                AsyncImage(url: URL(string: "https://api.burnfm.com/schedule_img/\(validImagePath)")) { phase in
-                    switch phase {
-                    case .success(let image):
-                        image
-                            .resizable()
-                            .scaledToFit()
-                    case .failure:
-                        Image("ShowNoImg")
-                            .resizable()
-                            .scaledToFit()
-                    case .empty:
-                        ProgressView()
-                    @unknown default:
-                        Image("ShowNoImg")
-                            .resizable()
-                            .scaledToFit()
-                    }
-                }
-            } else {
-                Image("ShowNoImg")
-                    .resizable()
-                    .scaledToFit()
-            }
-        }
-    }
-
-    init(json: JSON?) {
-        if let json = json {
-            self.id = json["id"].int ?? 0
-            self.startTime = json["start_time"].string ?? "00:00:00"
-            self.endTime = json["end_time"].string ?? "00:00:00"
-            if let imagePath = json["image_path"].string {
-                self.imagePath = imagePath
-            }
-            self.title = json["title"].string ?? "Live on BurnFM"
-            self.description = json["description"].string ?? "This is the pulse of Birmingham's campus. Your source for music, entertainment, and news"
-        } else {
-            self.id = 0
-            self.startTime = "00:00:00"
-            self.endTime = "00:00:00"
-            self.title = "Live on BurnFM"
-            self.description = "This is the pulse of Birmingham's campus. Your source for music, entertainment, and news"
-        }
-    }
-}
 
 #Preview {
     ContentView()

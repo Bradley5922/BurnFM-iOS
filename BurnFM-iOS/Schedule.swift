@@ -152,16 +152,25 @@ struct showDetailView: View {
                     .padding([.bottom])
                 
                 VStack(alignment: .leading) {
-                    Text("Description:")
-                        .fontWeight(.semibold)
-                    Text(show.description)
+                    Group {
+                        Text("Description:")
+                            .fontWeight(.semibold)
+                            .padding([.bottom], 2)
+                        Text(show.description)
+                            .padding([.bottom])
+                    }
                     
                     if let hosts = show.hosts {
-                        Text("Hosted By:")
-                            .fontWeight(.semibold)
-                        Text(hosts)
+                        Group {
+                            Text("Hosted By:")
+                                .fontWeight(.semibold)
+                            Text(hosts)
+                                .padding([.bottom])
+                        }
+                        .foregroundStyle(.secondary)
                     }
                 }
+                .padding()
             }
         }
         .navigationTitle(show.title)
@@ -238,7 +247,7 @@ struct Show: Identifiable, Equatable  {
                 self.hosts = hosts
             }
             
-            if let imagePath = json["image_path"].string {
+            if let imagePath = json["photo"].string {
                 self.imagePath = imagePath
             }
             
