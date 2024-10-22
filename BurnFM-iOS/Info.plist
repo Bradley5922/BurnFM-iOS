@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleVersion</key>
-	<string>2.0.1</string>
+	<string>2.5</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.1</string>
+	<string>2.5</string>
 	<key>NSUserNotificationsUsageDescription</key>
 	<string>Allow BurnFM to send push notifications about society updates, and show spotlighting.</string>
 	<key>UIBackgroundModes</key>
